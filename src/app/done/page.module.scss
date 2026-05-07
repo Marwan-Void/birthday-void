@@ -12,8 +12,23 @@
     padding: 20px;
     cursor: pointer;
     @include transition();
+    text-align: center;
     &:hover {
         padding: 25px;
         margin: 5px;
+    }
+}
+
+@media (max-width: 370px){
+    .info_box {
+        padding: 5px;
+    }
+
+    .info {
+        padding: 10px;
+        &:hover {
+            padding: 15px;
+            margin: 0;
+        }
     }
 }

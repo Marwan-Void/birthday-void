@@ -9,7 +9,7 @@
 }
 
 .heading {
-    padding: 10px;
+    padding: 5px;
 }
 
 .inp_box {
@@ -50,7 +50,6 @@
 @media (max-width: 280px){
     .box {
         padding: 5px;
-        gap: 5px;
     }
 
     .heading {
@@ -60,7 +59,6 @@
     .inp_box {
         padding: 10px;
         margin: 5px;
-        gap: 10px;
     }
 
     .inp {

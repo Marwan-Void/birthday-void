@@ -28,8 +28,22 @@
   -moz-transition: 0.7s ease;
   -ms-transition: 0.7s ease;
   -o-transition: 0.7s ease;
+  text-align: center;
 }
 .info:hover {
   padding: 25px;
   margin: 5px;
+}
+
+@media (max-width: 370px) {
+  .info_box {
+    padding: 5px;
+  }
+  .info {
+    padding: 10px;
+  }
+  .info:hover {
+    padding: 15px;
+    margin: 0;
+  }
 }/*# sourceMappingURL=page.module.css.map */
