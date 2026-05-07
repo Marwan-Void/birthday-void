@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-export const MotionLink = motion(Link);
+export const MotionLink = motion.create(Link);
 export const MotionDiv = motion.div;
 export const MotionMain = motion.main;
 export const MotionH1 = motion.h1;

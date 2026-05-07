@@ -2,11 +2,9 @@ import { JSX } from "react";
 import { itemVariants, MotionDiv, MotionH1, MotionLink, MotionMain, parentVariants } from "../../exports/global-methods";
 import styles from "./page.module.css";
 
-// const song = new Audio("../../../happy_birthday_edit.mp3");
 export default async function Done({ searchParams }: {searchParams: Promise<{ [key: string]: string | string[] | undefined }>}): Promise<JSX.Element> {
     const params = await searchParams;
     const getName: (string | undefined) = params.name as (string | undefined);
-    // song.play();
     return (
         <MotionDiv className={styles.page}>
             <MotionMain 

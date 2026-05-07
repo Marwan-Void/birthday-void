@@ -46,3 +46,26 @@
         margin: 5px;
     }
 }
+
+@media (max-width: 280px){
+    .box {
+        padding: 5px;
+        gap: 5px;
+    }
+
+    .heading {
+        padding: 5px;
+    }
+
+    .inp_box {
+        padding: 10px;
+        margin: 5px;
+        gap: 10px;
+    }
+
+    .inp {
+        &:focus {
+            padding: 5px;
+        }
+    }
+}
