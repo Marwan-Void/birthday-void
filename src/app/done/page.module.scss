@@ -1,0 +1,19 @@
+@use "../../exports/sass-methods" as *;
+
+.info_box {
+    @extend %flex-center-column;
+    padding: 10px;
+    gap: 20px;
+}
+
+.info {
+    box-shadow: 0 0 6px white;
+    @include border-radius();
+    padding: 20px;
+    cursor: pointer;
+    @include transition();
+    &:hover {
+        padding: 25px;
+        margin: 5px;
+    }
+}

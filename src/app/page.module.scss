@@ -1,0 +1,48 @@
+@use "../exports/sass-methods" as *;
+
+.box {
+    padding: 10px;
+    box-shadow: 0 0 6px white;
+    @include border-radius();
+    @extend %flex-center-column;
+    gap: 10px;
+}
+
+.heading {
+    padding: 10px;
+}
+
+.inp_box {
+    @extend %flex-center-column;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 6px white;
+    @include border-radius();
+    gap: 20px;
+}
+
+.inp {
+    @include border-radius();
+    padding: 5px;
+    outline: none;
+    background-color: white;
+    color: black;
+    @include transition();
+    &:focus {
+        outline: none;
+        padding: 10px;
+    }
+}
+
+.submit {
+    box-shadow: 0 0 6px white;
+    @include border-radius();
+    padding: 8px;
+    @include transition();
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    &:hover {
+        margin: 5px;
+    }
+}

@@ -1,0 +1,35 @@
+.info_box, .main, .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main {
+  padding: 30px;
+}
+
+.info_box {
+  padding: 10px;
+  gap: 20px;
+}
+
+.info {
+  box-shadow: 0 0 6px white;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.7s ease;
+  -webkit-transition: 0.7s ease;
+  -moz-transition: 0.7s ease;
+  -ms-transition: 0.7s ease;
+  -o-transition: 0.7s ease;
+}
+.info:hover {
+  padding: 25px;
+  margin: 5px;
+}/*# sourceMappingURL=page.module.css.map */
