@@ -1,10 +1,12 @@
 import { JSX } from "react";
 import { itemVariants, MotionDiv, MotionH1, MotionLink, MotionMain, parentVariants } from "../../exports/global-methods";
 import styles from "./page.module.css";
+import Btn from "@/components/Btn";
 
 export default async function Done({ searchParams }: { searchParams: Promise<{ [key: string]: string | string[] | undefined }> }): Promise<JSX.Element> {
     const params = await searchParams;
     const getName: (string | undefined) = params.name as (string | undefined);
+
     return (
         <MotionDiv className={styles.page}>
             <MotionMain 
@@ -16,6 +18,9 @@ export default async function Done({ searchParams }: { searchParams: Promise<{ [
                 transition={{ duration: 0.5, ease: "easeOut" }}
             >
                 <MotionDiv className={styles.info_box} variants={itemVariants}>
+                    <MotionH1 className={styles.info} variants={itemVariants}>
+                        <Btn />
+                    </MotionH1>
                     <MotionH1 className={styles.info} variants={itemVariants}>كل سنة وحضرتك طيب يا {getName}</MotionH1>
                     <MotionH1 className={styles.info} variants={itemVariants}>اتمني لحضرتك يوم سعيد</MotionH1>
                     <MotionH1 className={styles.info} variants={itemVariants}>دي هدية مني لحضرتك</MotionH1>

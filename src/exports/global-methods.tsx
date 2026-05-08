@@ -7,6 +7,7 @@ export const MotionDiv = motion.div;
 export const MotionMain = motion.main;
 export const MotionH1 = motion.h1;
 export const MotionInput = motion.input;
+export const MotionButton = motion.button;
 
 export const parentVariants: {
   hidden: {
